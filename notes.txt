@@ -1,0 +1,135 @@
+Bismillah 
+Insha allah complete the quiz
+Bismillah
+
+Insha allah complet 
+quiz
+
+---
+
+1) react js , quiz 
+2) front 
+3) backend
+---
+
+test multiple choice
+q) 2+3?
+a) 5 b) 3c) 0 d) -1
+answer option) a
+answer value) 5
+---
+multiple questions
+---
+react js
+
+components
+ question_list
+   question
+      option
+---
+relationship
+  question_list -> more than one -> question
+  question -> 4 -> options
+
+model
+  question 
+    text
+    options[4] -> 0, 1, 2, 3
+    correctAnswerIndex
+  quiz
+    id
+    question[]
+---
+
+functionality
+  show quiz
+  	create quiz -> will later
+
+backend
+ rest api
+   /quiz
+   http method: GET
+   query string 
+     http://localhsot:3000/quiz?id=2&abc=22
+
+     id=2&abc=22
+       query string 
+         after ?
+         parameter and value , seperated by =
+         more then one is seperate with &
+
+   request body
+    no
+
+   output// http respons body
+     content type : application/json
+     [
+     	{
+     		text: "2+3?",
+     		options: [ "5", "3", "0", "-1"],
+     		correctAnswerIndex :0
+     	},
+     	{
+     		text: "2*3?",
+     		options: [ "5", "6", "0", "-1"],
+     		correctAnswerIndex : 1
+     	},
+     	{
+     		text: "6/3?",
+     		options: [ "5", "3", "0", "2"],
+     		correctAnswerIndex : 3
+     	}
+
+     ]
+---
+bonus optional
+ embeding
+ --
+ <iframe 
+ 	width="560" 
+ 	height="315" 
+ 	src="https://www.youtube.com/embed/Ve-ug46oQ1M" 
+ 	frameborder="0"
+ 	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+ 	allowfullscreen>'
+ </iframe>
+ ---
+ <iframe 
+ 	width="560" 
+ 	height="315" 
+ 	src="https://localhost:3000/quiz/20" 
+ 	frameborder="0"
+ 	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+ 	allowfullscreen>'
+ </iframe>
+
+ ---
+ technology
+
+ mongoose
+	 react js
+	 http client -> axios
+ backend
+  node.js
+  express
+  mongoose
+
+---
+extra things
+ test
+   junit
+
+ deploy
+  domain
+  server
+---
+7thsky_products_quiz
+  code
+     frontend #create react app -> which  
+
+     backend
+     	public
+     	server
+     	 server.js
+  notes.txt
+  
